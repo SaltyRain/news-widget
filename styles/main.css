@@ -1,0 +1,125 @@
+/* 
+    blue topaz : #67AECA
+    AMETHYST: #675682
+    JEWEL: #5F0F4E
+    ROSE: #E52A6F
+    WHITE: #FFFFFF
+    PAGE: #eceaea
+    GREY: #949494
+*/
+
+.page-title {
+    text-transform: uppercase;
+}
+body {
+    max-width: 700px;
+    font-family: "Open Sans", sans-serif;
+    background: #eceaea;
+    margin: auto;
+    font-size: 16px;
+}
+.main {
+    margin-top: 64px;
+}
+
+.message {
+    background: #ffffff;
+    margin-bottom: 14px;
+    padding: 14px 20px;
+    transition: 0.2s;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+}
+.message_checked {
+    background: #dadada;
+}
+
+.message--title {
+    font-weight: 600;
+    margin-top: 12px;
+}
+
+.message--item-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 20px;
+}
+
+.message--author {
+    margin-right: 12px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.author--text {
+    color: #949494;
+}
+.message--dateTime {
+    font-size: 14px;
+    margin-top: 0;
+    margin-bottom: 0;
+    color: #949494;
+}
+
+.message--status-wrapper {
+    position: relative;
+    display: inline-block;
+}
+.message--status {
+    position: absolute;
+    right: -20px;
+    top: 2px;
+}
+
+.loader {
+    text-align: center;
+}
+.message--icon {
+    position: relative;
+    background-image: url("../email.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 50px;
+    height: 50px;
+    outline: 0;
+    border: 0;
+    cursor: pointer;
+}
+
+.message--icon-count {
+    position: absolute;
+    top: 0;
+    right: -10px;
+    background: #e52a6f;
+    color: white;
+    padding: 3px 8px;
+    border-radius: 10px;
+    font-weight: 700;
+}
+
+.button {
+    background: #e52a6f;
+    color: white;
+    text-decoration: none;
+    padding: 15px 25px;
+    border-radius: 3px;
+    display: inline-block;
+}
+
+@media (max-width: 700px) {
+    .main {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
+@media (max-width: 520px) {
+    .message--item-wrapper {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 14px;
+    }
+    .message--source {
+        margin-top: 10px;
+    }
+}
